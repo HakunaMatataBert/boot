@@ -20,7 +20,7 @@ public class UserController {
         return "index";
     }
     @RequestMapping("/delete")
-    public String deleteAll(Model model){//删除所有的信息
+    public String deleteAll(Model model){//删除所有的信息得到
         userImpl.deleteAll();
         model.addAttribute("user",userImpl.AllUser().size()==0?"":userImpl.AllUser());
         return "index";

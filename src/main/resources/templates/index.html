@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Spring boot+Thymeleaf!<br>
+<form action="/index" th:type="post">
+    <input name="uname" th:type="text">
+    <br>
+    <input name="upassword" th:type="text">
+    <br>
+    <input th:type="submit">
+
+</form>
+<form action="/delete">
+    <input th:type="submit" th:value="清空信息">
+</form>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<span th:text="${user}" style="color: #ff3f43;"></span>
+</body>
+</html>
